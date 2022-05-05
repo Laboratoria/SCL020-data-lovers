@@ -1,10 +1,10 @@
 button {
-    position: center;
+    position: relative;
     justify-content: center;
     width: 224px;
     height: 51px;
     left: 224x;
-    margin-top: 5%;
+    top: 200px;
     color: #FFFFFF;
     
     background: #380000;;
