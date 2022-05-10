@@ -14,7 +14,7 @@ video {
 button {
     padding: 10px 30px 5px;
     color: #202020;
-    background: #eeba0b;
+    background: #fcbf49;
     border-radius: 69px;
     font-style: normal;
     font-weight: bold;
@@ -46,4 +46,5 @@ footer {
     color: #ffffff;
     background-color: #202020;
     margin-top: 800px;
+    text-align: center;
 }
