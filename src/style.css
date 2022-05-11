@@ -11,9 +11,46 @@ video {
     background-size: cover;
 }
 
+@media screen and (min-width: 430px) {
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -100;
+        background-size: cover;
+    }
+}
+
+h1 {
+    color: antiquewhite;
+    width: 100%;
+    font-size: 90%;
+    background: #471A1B;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 430px) {
+    h1 {
+        color: antiquewhite;
+        width: 100%;
+        font-size: 130%;
+        background: #471A1B;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 button {
     padding: 10px 30px 5px;
-    color: #202020;
+    color: #471A1B;
     background: #fcbf49;
     border-radius: 69px;
     font-style: normal;
@@ -27,8 +64,32 @@ button {
     margin-right: auto;
 }
 
+@media screen and (min-width: 430px) {
+    button {
+        padding: 10px 30px 5px;
+        color: #471A1B;
+        background: #fcbf49;
+        border-radius: 69px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        display: flex;
+        top: 300px;
+        position: relative;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 button:hover {
     animation: 3s ke 1;
+}
+
+@media screen and (min-width: 430px) {
+    button:hover {
+        animation: 3s ke 1;
+    }
 }
 
 @keyframes ke {
@@ -42,9 +103,9 @@ a {
     text-decoration: none;
 }
 
-footer {
-    color: #ffffff;
-    background-color: #202020;
-    margin-top: 800px;
-    text-align: center;
+@media screen and (min-width: 430px) {
+    a {
+        color: maroon;
+        text-decoration: none;
+    }
 }
