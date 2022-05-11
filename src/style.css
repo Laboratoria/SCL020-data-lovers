@@ -66,15 +66,15 @@ button {
 
 @media screen and (min-width: 430px) {
     button {
-        padding: 20px 50px 1px;
+        padding: 15px 30px 5px;
         color: #471A1B;
         background: #fcbf49;
-        border-radius: 80px;
+        border-radius: 69px;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 25px;
         display: flex;
-        top: 400px;
+        top: 300px;
         position: relative;
         justify-content: center;
         margin-left: auto;
