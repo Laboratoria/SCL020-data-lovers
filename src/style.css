@@ -15,7 +15,18 @@ header{
     color: white;
 }
 
-/*falta achicar imagen del header y el Totorito*/
+#containerTotoro {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    padding-bottom: 2%;
+}
+#totoritoWhite {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+
+}
 
 h1{
     font-family: 'Permanent Marker', cursive;
