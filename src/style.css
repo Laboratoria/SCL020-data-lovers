@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    background-color: #C4DDFF ;
+}
+
+header{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    justify-content: center;
+    background-color: #0080BD;
+    text-align: center;
+    color: white;
+}
+
+/*falta achicar imagen del header y el Totorito*/
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2 em;
+}
+
+p{
+    font-family: 'Mali', cursive;
+    font-size: 1.2 em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10em solid transparent;
+    border-right: 10em solid transparent;
+  
+    border-top: 2em solid #0080BD;
+  }
+  
+
+  section h2{
+      
+      font-family: 'Permanent Marker', cursive;
+  }
+
+  section p{
+      font-size: 1 em;
+      color: white;
+
+  }
+
+  .posterImages{
+    height: 15%;
+    width: 15%; 
+  }
+
+.smallImg {
+ height: 10%;
+ width: 10%;
+  }
