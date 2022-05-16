@@ -1,9 +1,17 @@
 // estas funciones son de ejemplo
 
 export const example = () => {
-  return 'example';
+    return 'example';
 };
 
 export const anotherExample = () => {
-  return 'OMG';
+    return 'OMG';
+
 };
+
+/*export const search = (query) => {
+    return characters.filter(item => {
+        return item.name.includes(query);
+    })
+}
+console.log(search('potter'));*/

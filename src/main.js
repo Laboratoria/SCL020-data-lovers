@@ -1,6 +1,13 @@
 import { example } from './data.js';
 // import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import data from './data/harrypotter/data.js';
+const characters = data.characters;
+const funFacts = data.funFacts;
+const spells = data.spells;
+const potions = data.potions;
 
-console.log(example, data);
+
+
+//console.log(characters); // console: ['0', '1', '2']
+const busqueda = characters.filter(item => item.patronus)
+console.log(busqueda);
