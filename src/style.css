@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {/*ajuste general de margin de la pagina para que no quede borde*/
+    margin: 0;
+}
+
+body, section{ /*propiedades compartidas del body y section*/
+    height: 100vh; /*medidas de viewport, se ve segun la pantalla*/
+    width: 100vw; /*medida de viewport, se ve segun la pantalla*/
+    background-color: #C4DDFF;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    justify-content: center;
+    background-color: #0080BD;
+    text-align: center;
+    color: white;
+}
+
+#containerTotoro { /*Contenedor de TotoroWhite*/
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    padding-bottom: 2%;
+}
+
+#totoritoWhite { /*Totoro blanquito*/
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    float: inline-start;
+}
+
+h1 { /*Titulo del header*/
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4 em;
+}
+
+p { /*Todos los parrafos*/
+    font-family: 'Mali', cursive;
+    font-size: 1.2 em;
+}
+
+.containerArrow {/*contenedor de flechita*/
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down { /*flechita superior abajo del header*/
+    width: 0;
+    height: 0;
+    border-left: 10em solid transparent;
+    border-right: 10em solid transparent;
+    border-top: 3em solid #0080BD;
+}
+
+.container, .containerImg{ /*contenedor de objetos centrados y conenedor de imagenes centradas*/
+    display: flex;
+    justify-content: center;  
+    padding-top: 10%;
+}
+
+#calcifer, #pinkTotoro, #mononoke {/*tamaño de las imagenes*/
+    height: 20%;
+    width: 20%;
+}
+
+.containerEnd{/*contenedor de imagenes a la derecha*/
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px; 
+}
+
+section h2 { /*propiedades de los titulos h2 contenidos en los section*/
+    padding: 2%;
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 10%;
+    color: white;
+}
+
+section p { /*propiedades de los p contenidos en los section*/
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1 em;
+    color: white;
+
+}
+
+.section2and4 { /*seccion 2 (Top5) y 4 (Datos)*/
+    height: 100vh;
+    width: 100vw;
+    background-color: #7FB5FF; /*Fondo de otro tono o color*/
+}
+
+.articleToLeft{ /*para que los articulos o parrafos de las dos secciones queden al lado izquierdo y la imagen a la*/
+    width: 60%;
+    float: left;
+}
+
+.posterImages { /*imagenes de peliculas*/
+    padding: 2%;
+    height: 15%;
+    width: 15%;
+}
+
+.smallImg {/*imagenes chiquitas*/
+    height: 10%;
+    width: 10%;
+}
+
+#characters, #gender, #species{ /*selectores para filtrar*/
+    justify-content: center;
+    height: 5%;
+    width: 10%;
+}/*falta hacer que los selectores queden debajo del gif*/
