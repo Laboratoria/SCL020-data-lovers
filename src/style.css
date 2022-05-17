@@ -75,6 +75,10 @@ p { /*Todos los parrafos*/
     margin: 30px; 
 }
 
+#imgRigth2{
+    border-radius: 10%;
+}
+
 section h2 { /*propiedades de los titulos h2 contenidos en los section*/
     padding: 2%;
     font-family: 'Permanent Marker', cursive;
@@ -107,6 +111,18 @@ section p { /*propiedades de los p contenidos en los section*/
     height: 15%;
     width: 15%;
 }
+
+search{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+    input[type=search]{
+        height:40px;
+        width: 250px;
+        border: 1.5px solid #398AB9;
+        border-radius: 10%;
+    }
 
 .smallImg {/*imagenes chiquitas*/
     height: 10%;
