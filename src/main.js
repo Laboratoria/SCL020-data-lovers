@@ -18,7 +18,7 @@ const busqueda = characters.filter(item => item.id ==
     item.id == "744" || item.id == "123" ||
     item.id == "327" || item.id == "679" ||
     item.id == "382" || item.id == "350")
-const dataOriginal = [];
+let dataOriginal = [];
 dataOriginal.push(busqueda);
 
 
