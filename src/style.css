@@ -148,6 +148,7 @@ section p { /*propiedades de los p contenidos en los section*/
         width: 250px;
         border: 1.5px solid #398AB9;
         border-radius: 10%;
+        font-size:large;
     }
 
 
@@ -156,14 +157,35 @@ section p { /*propiedades de los p contenidos en los section*/
     width: 10%;
 }
 
-.filters {
- 
-   display: inline-flex;
-justify-content: center;
+.filters { /*para que el filtrado quede centrado en grupo en la parte de arriba*/
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 10%;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#characters{ /*características de personajes individual para darle estilo*/
+    height:40px;
+    width: 250px;
     border: 1.5px solid #398AB9;
     border-radius: 10%;
-    height: 10%;
-    width: 5%;
+    font-size:large;
+}
+#gender{ /*características de género individual para darle estilo*/
+    height:40px;
+    width: 250px;
+    border: 1.5px solid #398AB9;
+    border-radius: 10%;
+    font-size:large;
+}
+#species{ /*características de especies individual para darle estilo*/
+    height:40px;
+    width: 250px;
+    border: 1.5px solid #398AB9;
+    border-radius: 10%;
+    font-size:large;
 }
 
   
