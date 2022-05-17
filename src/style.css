@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-body{
-    background-color: #C4DDFF ;
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
+* {/*ajuste general de margin de la pagina para que no quede borde*/
+    margin: 0;
 }
 
-header{
+body, section{ /*propiedades compartidas del body y section*/
+    height: 100vh; /*medidas de viewport, se ve segun la pantalla*/
+    width: 100vw; /*medida de viewport, se ve segun la pantalla*/
+    background-color: #C4DDFF;
+}
+
+header {
     height: 100%;
     width: 100%;
     padding: 2%;
@@ -15,50 +20,219 @@ header{
     color: white;
 }
 
-/*falta achicar imagen del header y el Totorito*/
-
-h1{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2 em;
-}
-
-p{
-    font-family: 'Mali', cursive;
-    font-size: 1.2 em;
-}
-
-.container {
+#containerTotoro { /*Contenedor de TotoroWhite*/
     display: flex;
     justify-content: center;
-  }
-  
-  .arrow-down {
+    margin-right: 10px;
+    padding-bottom: 2%;
+}
+
+#totoritoWhite { /*Totoro blanquito*/
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    float: inline-start;
+}
+
+h1 { /*Titulo del header*/
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5 em;
+}
+
+p { /*Todos los parrafos*/
+    font-family: 'Mali', cursive;
+    font-size: 1.2 em;
+    white-space: pre-line;
+
+}
+
+.containerArrow {/*contenedor de flechita*/
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down { /*flechita superior abajo del header*/
     width: 0;
     height: 0;
     border-left: 10em solid transparent;
     border-right: 10em solid transparent;
-  
-    border-top: 2em solid #0080BD;
-  }
-  
+    border-top: 3em solid #0080BD;
+}
 
-  section h2{
-      
-      font-family: 'Permanent Marker', cursive;
-  }
+.container, .containerImg, #containerTotoroEnd { /*contenedor de objetos centrados y conenedor de imagenes centradas*/
+    display: flex;
+    justify-content: center;  
+    padding-top: 10%;
+}
 
-  section p{
-      font-size: 1 em;
-      color: white;
+.containerImgP { /*gif motitas de polvo*/
+    display: flex;
+    justify-content: center; 
+    padding-top: 0%;
+}
 
-  }
+#calcifer, #pinkTotoro, #mononoke {/*tamaño de las imagenes*/
+    height: 20%;
+    width: 20%;
+}
 
-  .posterImages{
+.containerEnd{/*contenedor de imagenes a la derecha*/
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%; 
+}
+
+#imgRigth2{
+    border-radius: 10%;
+}
+
+
+section h2 { /*propiedades de los titulos h2 contenidos en los section*/
+    padding: 2%;
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 10%;
+}
+
+h2 {
+    font-size:  4 em;
+    font-weight: bold;
+    color: white;
+}
+
+#historyH2{
+    color:  #398AB9;
+}
+
+section p { /*propiedades de los p contenidos en los section*/
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: normal;
+    font-size: 1 em;
+    color: white;
+}
+
+#historyP{
+   color: #3D56B2; 
+}
+
+.section2and4 { /*seccion 2 (Top5) y 4 (Datos)*/
+    box-sizing: content-box;
+    padding-right: 10%;
+    height: 100vh;
+    width: 100%;
+    background-color: #7FB5FF; /*Fondo de otro tono o color*/
+}
+
+.articleToLeft{ /*para que los articulos o parrafos de las dos secciones queden al lado izquierdo y la imagen a la*/
+    width: 60%;
+    float: left;
+    margin-left: 5%;
+}
+
+
+.posterImages { /*imagenes de peliculas*/
+    padding: 2%;
     height: 15%;
-    width: 15%; 
+    width: 15%;
+    border-radius: 15%;
+}
+/*input[type=search]*/
+#search{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+    input[type=search]{
+        height:40px;
+        width: 250px;
+        border: 1.5px solid #398AB9;
+        border-radius: 10%;
+    }
+
+
+.smallImg {/*imagenes chiquitas*/
+    height: 10%;
+    width: 10%;
+}
+
+.filters {
+ 
+   display: inline-flex;
+justify-content: center;
+    border: 1.5px solid #398AB9;
+    border-radius: 10%;
+    height: 10%;
+    width: 5%;
+}
+
+  
+  #socialNetSection{
+    display: block;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 10%;
+    width: 75%;
+    background-color: #C4DDFF;
+    border-radius: 20px; 
+     
+}
+#socialNet {
+    margin-top: 15%;
+    margin-left: 3%;
+    text-align:left;
+    color: #3D56B2;
+}
+.socialImg{
+    display: flex;
+   justify-content:space-evenly;
+   align-items: center;
+}
+
+#museumGhibli{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0%;
+
+}
+
+.containerArrow-Up {/*contenedor de flechita*/
+    display: flex;
+    justify-content: center;
+    background-color: #7FB5FF;
+    padding-top: 5%;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 15em solid transparent;
+    border-right: 15em solid transparent;
+    border-bottom: 2em solid #0080BD;
   }
 
-.smallImg {
- height: 10%;
- width: 10%;
-  }
+
+  #containerTotoroEnd{
+    height: 5vh;
+    width: 100vw;
+    background-color: #0080BD ;
+}
+
+#totoroEnd{
+    position: absolute;
+   
+    height:20%;
+    background-color: #0080BD;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #0080BD;
+    text-align: center;
+    color: white; 
+}
+
+
+
