@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio Ghibli Movies</title>
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/93c3dea8c8.js" crossorigin="anonymous"></script>
@@ -9,9 +10,6 @@
 <body>
   <header>
     <img src="img/ghibli.png" id="homePoster">
-    <div id="containerTotoro">
-    <img src="img/totorito.png" id="totoritoWhite">
-    </div>
     <h1>Studio Ghibli Movies</h1>
     <p> Un sitio "guía" dirigido por fanáticos para Studio Ghibli, el principal estudio de animación en Japón.</p>
   </header>
@@ -19,7 +17,7 @@
   <section>
     <h2>Historia de Studio Ghibli</h2>
     <article class="articleToLeft">
-    <p class="textToLeft">Los estudios Ghibli fueron creados en 1985 por Hayao Miyazaki e Isao Takahata.
+    <p>
       Studio Ghibli es un estudio de animación japonés que fue creado por Hayao Miyazaki e Isao Takahata
     (cabe destacar que Takahata creó "Heidi" y "Marco"), ellos trabajaban
     en otra empresa, la editorial Tokuma Shoten y en el año 1984 
@@ -36,39 +34,34 @@
     </div>
   </article>
     <div class="containerEnd">
-    <img src="https://media1.giphy.com/media/uCfOoQNsp2zGeYafKa/giphy.gif?cid=ecf05e47aqejaooc74zr2thsr2yqufgxf9el9vudz9f58nnb&rid=giphy.gif&ct=s" class="imgRigth" id="chihiroGif"> 
+    <img src="https://media1.giphy.com/media/uCfOoQNsp2zGeYafKa/giphy.gif?cid=ecf05e47aqejaooc74zr2thsr2yqufgxf9el9vudz9f58nnb&rid=giphy.gif&ct=s" id="chihiroGif"> 
   </div>
   </section>
-  <section class="section2and4">
+  <section class="section2">
     <h2>Top 5 películas más vistas</h2>
-    <div class="container">
-      <img src="https://ramenparados.com/wp-content/uploads/2021/05/POSTER_CHIHIRO_2021.jpg" class="posterImages">
+    <div class="containerCovers">
+      <img src="https://i.pinimg.com/564x/b4/ec/af/b4ecaf79297371c29c01989abd3449fe.jpg" class="posterImages">
       <img src="https://es.web.img2.acsta.net/c_310_420/medias/nmedia/18/70/26/45/20236853.jpg" class="posterImages">
       <img src="https://www.golem.es/golem/carteles/2021/April/hd-1619000464.jpg" class="posterImages">
-      <img
-        src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/11/tumba-luciernagas_0.jpg?itok=zJ3BkzQP"
-        class="posterImages">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ABllPhd9C6-LfJ2pSo2zt2mxz0a2DQ2vOTA6g9oQ8fOTs5RcpA2bBhbowAtyLO8AQaE&usqp=CAU"
-        class="posterImages">
+      <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2016/11/tumba-luciernagas_0.jpg?itok=zJ3BkzQP" class="posterImages">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-ABllPhd9C6-LfJ2pSo2zt2mxz0a2DQ2vOTA6g9oQ8fOTs5RcpA2bBhbowAtyLO8AQaE&usqp=CAU" class="posterImages">
+     </div>
+     
+     <div id="search">
+        <form action="#">
+            <input type="search"
+                placeholder=" Buscar películas.."
+                name="search"> 
     </div>
-    <label for="searchMovies" class="container">
-      <input type="text" id="searchMovies" placeholder="Buscar películas..."> 
-    </label>
-    
-   <ul>
-     <li> El Viaje de Chihiro </li>
-     <li> Mi Vecino Totoro </li>
-     <li> La Princesa Mononoke </li>
-     <li> La Tumba de las Luciérnagas </li>
-     <li>El Castillo Vagabundo </li>
-    </ul>
-    <div class="containerImg">
+    <div class="containerCovers">
     <img src=https://media1.giphy.com/media/LQoL4nHVLzhw2YXMU6/giphy.gif?cid=790b76119a3b955a6fce414d970564c9c72c4d56b250430b&rid=giphy.gif&ct=s alt="Duendes de polvo" class="smallImg">
   </div>
   </section>
-  <section class="container">
-    <select name="characters" id="characters"></select>
+  <div class="filters">
+   <select name="characters" id="characters">
+      <option hidden selected>Personajes</option>
+      <option value="Chihiro">Chihiro</option>
+    </select>
     <select name="gender" id="gender">
       <option hidden selected>Género</option>
       <option value="Female">Femenino</option>
@@ -88,32 +81,19 @@
       <option value="Unknown">Desconocido</option>
       <option value="Deity, Dragon">Deidad, dragón</option>
     </select>
-  </section>
-<section class="section2and4">
-<h2>Datos Extra</h2>
-<article class="articleToLeft">
-<p class="textToLeft">Uno de los datos más importantes es que existe un museo 100% dedicado a Studios Ghibli. 
-  ¡Sí, un museo!
-  El propio museo, diseñado por el maestro Hayao Miyazaki y 
-  supervisado por su hijo, Goro Miyazaki, 
-  intenta llevar al visitante a una de sus historias de animación. El museo es la excusa perfecta para visitar el divertido barrio de Kichijoji, al oeste de Tokio.
-  
-  La disposición de vidrieras de las que salen Totoro y sus amigos, puertas pequeñas que sólo pueden ser cruzadas por niños, paredes curvas que crean una atmósfera única, 
-  ascensores de otros tiempos, escaleras que parecen no tener fin… todo ello hace que el visitante se traslade a un mundo de ensueño como personaje principal de la historia.
-</p>
-<p class="textToLeft">Redes Sociales Studio Ghibli</p>
-<div class="containerImg">
-<a href="https://www.instagram.com/ghibli.movies/?hl=es"><i class="fa-brands fa-instagram-square"></i></a>
-<a href="https://es-la.facebook.com/FansOfStudioGhibli/"><i class="fa-brands fa-facebook-square"></i></a> 
-<a href="https://twitter.com/ghibliusa"><i class="fa-brands fa-twitter-square"></i></a>
-<a href="https://www.ghibli-museum.jp/en/"><img src="https://www.ghibli-museum.jp/img/news.png"></img></a>
+  </section> 
 </div>
-</article>
-<div class="containerEnd"> 
-  <img src="https://www.ghibli-museum.jp/en/images/welcome06.jpg" class="imgRigth"></img>
-</div>
-</section>
-  <footer>Derechos Reservados ♥chicas superpoderosas♥</footer>
+
+<footer>
+  <div class="arrowEnd"></div>
+  <nav class="elementsNav">
+    <p>Redes Sociales Studio Ghibli</p>
+    <a href="https://www.instagram.com/ghibli.movies/?hl=es"><i class="fa-brands fa-instagram-square"></i></a>
+    <a href="https://es-la.facebook.com/FansOfStudioGhibli/"><i class="fa-brands fa-facebook-square"></i></a> 
+    <a href="https://twitter.com/ghibliusa"><i class="fa-brands fa-twitter-square"></i></a>
+    <a href="https://www.ghibli-museum.jp/en/" id="museumGhibli"><img src="https://www.ghibli-museum.jp/img/news.png"></img></a>
+  </nav>
+</footer>
   <script src="main.js" type="module"></script>
   <script src="Mononoke.js" type="module"></script>
 </body>
