@@ -24,11 +24,17 @@ const busqueda = () => {
 let dataOriginal = [];
 dataOriginal.push(busqueda);
 
-const item = document.getElementById("item1");
+const item = (dataOriginal) => {
+    dataOriginal.forEach(prueba => {
+        console.log(dataOriginal.name);
+    });
+}
+
+/*const item = document.getElementById("item1");
 dataOriginal.forEach(elementos => {
     item.innerHTML = `<li>${elementos.name} </li>`
 })
-console.log(item);
+console.log(item);*/
 
 
 
