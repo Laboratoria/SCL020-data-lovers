@@ -30,3 +30,8 @@ export const busqueda = (arrayCharacters) => {
     return arrayFiltradoPorID;
 
 }
+
+export const mostrarData = (mostrandoUnId) => {
+    const mostrandoUnosId = mostrandoUnId.filter((item) => item.id == "350");
+    return mostrandoUnosId;
+}

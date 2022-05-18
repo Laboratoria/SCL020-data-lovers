@@ -17,7 +17,10 @@ const potions = data.potions;
 let dataOriginal = [];
 dataOriginal.push(busqueda);
 
+let aquiEstamosGuardando = [];
+aquiEstamosGuardando.push(mostrarData);
 
+console.log(mostrarData(characters));
 
 
 
