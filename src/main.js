@@ -25,6 +25,9 @@ dataOriginal.push(busqueda);
 
 console.log(dataOriginal);
 
+let item1 = document.getElementById ("item1")
+
+item1.addEventListener ("click"); 
 
 
 /*const casa = busqueda.filter(item => item.Gryffindor)
