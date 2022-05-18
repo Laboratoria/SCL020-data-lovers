@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@700&display=swap');
 body {
     width: 100vw;
     margin-bottom: 20px;
@@ -6,11 +6,9 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 600;
-    font-size: 29px;
-    line-height: 30px;
+    font-family: 'Oswald';
+    font-size: 12px;
+    line-height: 20px;
     text-align: center;
     color: #f0ead2;
 }
@@ -19,35 +17,41 @@ body {
     /*body media query*/
     body {
         width: 100vw;
-        /*margin-top: 20px;*/
-        margin-bottom: 20px;
+        margin-top: 20px;
+        /*margin-bottom: 30px;*/
         background-image: url(https://cutewallpaper.org/22/harry-potter-map-wallpapers/1594625280.jpg);
         background-position: center;
         /* background-size: cover;*/
         background-repeat: repeat;
-        font-family: 'Inter';
-        font-style: italic;
-        font-weight: 600;
-        font-size: 29px;
-        line-height: 30px;
-        text-align: center;
-        color: #f0ead2;
     }
 }
 
-.contenedor {
-    width: 80%;
-    height: 100vh;
-    top: 5%;
-    margin: 0 auto;
-    background: #471A1B;
-    mix-blend-mode: normal;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+h1 {
+    font-family: "Oswald";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 20px;
+    text-align: center;
+    color: #f0ead2;
 }
 
 @media screen and (min-width: 430px) {
-    /*contenedor media query*/
+    h1 {
+        font-family: "Oswald";
+        font-weight: 600;
+        font-size: 40px;
+        padding: 13px;
+        text-align: center;
+        color: #f0ead2;
+    }
+    p {
+        font-family: "Oswald";
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #f0ead2;
+    }
     .contenedor {
         width: 80%;
         height: 100vh;
@@ -58,141 +62,102 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
     }
-}
-
-#menuh {
-    background: #fcbf49;
-    width: 80%;
-    height: 15%;
-    position: relative;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (max-width: 430px) {
-    #menuh {
-        background: #fcbf49;
-        width: 30%;
-        height: 10%;
+    @media screen and (min-width: 430px) {
+        /*contenedor media query*/
+        .contenedor {
+            width: 80%;
+            height: 100vh;
+            top: 5%;
+            margin: 0 auto;
+            background: #471A1B;
+            mix-blend-mode: normal;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+        }
+    }
+    /*ul es la lista que esta dentro de la etiqueta nav que tiene el id menu*/
+    #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    @media screen and (min-width: 430px) {
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    /*li son los elementos de la lista*/
+    #menu ul li {
+        float: left;
+    }
+    @media screen and (min-width: 430px) {
+        #menu ul li {
+            float: left;
+        }
+    }
+    #menu a {
+        text-decoration: none;
+        color: #721d1d;
+        display: block;
+        padding: 20px 50px;
+        font-family: "Oswald";
+        font-size: 20px;
         position: relative;
+        justify-content: center;
+    }
+    @media screen and (min-width: 430px) {
+        #menu a {
+            text-decoration: none;
+            color: #721d1d;
+            display: block;
+            padding: 20px 50px;
+            font-family: "Oswald";
+            font-size: 20px;
+            position: relative;
+            justify-content: center;
+        }
+    }
+    #menu {
+        background: #fcbf49;
+        width: 80%;
+        height: 10%;
+        padding: 5px 5px 9px 5px;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    display: flex;
-}
-
-@media screen and (max-width: 430px) {
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        display: flex;
+    @media screen and (min-width: 430px) {
+        #menu {
+            background: #fcbf49;
+            width: 80%;
+            height: 10%;
+            padding: 5px 5px 9px 5px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-}
-
-li {
-    float: left;
-}
-
-@media screen and (max-width: 430px) {
-    li {
-        float: left;
-    }
-}
-
-#menuh #item a {
-    text-decoration: none;
-    color: #721d1d;
-    display: block;
-    padding: 20px 50px;
-    font-family: "Oswald";
-    font-size: 25px;
-    position: relative;
-    justify-content: center;
-}
-
-@media screen and (max-width: 430px) {
-    #menuh #item a {
-        text-decoration: none;
-        color: #353535;
-        display: block;
-        padding: 20px 50px;
-        font-family: "Oswald";
-        font-size: 25px;
-        position: relative;
-        justify-content: center;
-    }
-}
-
-.barra {
-    color: #fcbf49;
-    padding: 15px 0 0 0;
-}
-
-@media screen and (max-width: 430px) {
     .barra {
         color: #fcbf49;
         padding: 15px 0 0 0;
     }
-}
-
-#menuh #item:hover a {
-    color: #f9eae1;
-    background: #591310;
-    opacity: 0.9;
-}
-
-@media screen and (max-width: 430px) {
-    #menuh #item:hover a {
+    @media screen and (min-width: 430px) {
+        .barra {
+            color: #fcbf49;
+            padding: 15px 0 0 0;
+        }
+    }
+    #menu a:hover {
         color: #f9eae1;
         background: #591310;
         opacity: 0.9;
     }
-}
-
-#menuh #desplegar {
-    display: none;
-}
-
-@media screen and (max-width: 430px) {
-    #menuh #desplegar {
-        display: none;
+    @media screen and (min-width: 430px) {
+        #menu a:hover {
+            color: #f9eae1;
+            background: #591310;
+            opacity: 0.9;
+        }
     }
-}
-
-#menuh #item:hover #desplegar {
-    display: block;
-}
-
-@media screen and (max-width: 430px) {
-    #menuh #item:hover #desplegar {
-        display: block;
-    }
-}
-
-.atras {
-    text-decoration-line: none;
-    padding: 10px 30px 5px;
-    color: #202020;
-    background: #fcbf49;
-    border-radius: 69px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    display: flex;
-    top: 300px;
-    position: relative;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}

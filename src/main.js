@@ -18,11 +18,14 @@ const busqueda = characters.filter(item => item.id ==
     item.id == "744" || item.id == "123" ||
     item.id == "327" || item.id == "679" ||
     item.id == "382" || item.id == "350")
+
 let dataOriginal = [];
 dataOriginal.push(busqueda);
 
 
 console.log(dataOriginal);
+
+
 
 /*const casa = busqueda.filter(item => item.Gryffindor)
 return house = Gryffindor
