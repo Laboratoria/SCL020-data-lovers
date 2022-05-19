@@ -20,7 +20,12 @@ dataOriginal.push(busqueda);
 let aquiEstamosGuardando = [];
 aquiEstamosGuardando.push(mostrarData);
 
-console.log(mostrarData(characters));
+//console.log(mostrarData(characters));
+
+const elPersonaje350 = document.getElementById("item1");
+elPersonaje350.innerHTML = `<li>${id}</li>`
+
+
 
 
 
