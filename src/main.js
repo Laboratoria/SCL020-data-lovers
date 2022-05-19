@@ -8,22 +8,48 @@ const funFacts = data.funFacts;
 const spells = data.spells;
 const potions = data.potions;
 
+const datosPersonajesPrincipales = busqueda(characters);
+//console.log(datosPersonajesPrincipales);
+const showPersonajes = (datosPersonajesPrincipales) => {
+    return datosPersonajesPrincipales.map(
+            (gente) =>
+            `<div class="contenedorDePersonajes">
+            <img src="" alt=""/>
+            <p>${gente.name}</p>
+            <p>${gente.birth}</p>
+            <p>${gente.species}</p>
+            <p>${gente.house}</p>
+            <p>${gente.patronus}</p>
+        </div>`
+        )
+        .join("");
+};
+
+const cambio = document.querySelector(".primeraMuestraPersonajes");
+cambio.innerHTML = showPersonajes(datosPersonajesPrincipales);
 
 
-//console.log(characters); // console: ['0', '1', '2']
 
-//console.log(busqueda(characters));
+//let dataOriginal = [];
+//dataOriginal.push(busqueda);
+//console.log(dataOriginal);
 
-let dataOriginal = [];
-dataOriginal.push(busqueda);
 
-let aquiEstamosGuardando = [];
+
+
+
+/*let aquiEstamosGuardando = [];
 aquiEstamosGuardando.push(mostrarData);
+aquiEstamosGuardando.forEach(item => {
+    const elPersonaje350 = document.getElementById("item1");
+    let h1 = document.createElement("h1");
+    h1.innerHTML = `<li>${id}</li>`;
+})
 
-//console.log(mostrarData(characters));
+//console.log(mostrarData(characters));*/
 
-const elPersonaje350 = document.getElementById("item1");
-elPersonaje350.innerHTML = `<li>${id}</li>`
+
+
 
 
 

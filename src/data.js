@@ -32,6 +32,7 @@ export const busqueda = (arrayCharacters) => {
 }
 
 export const mostrarData = (mostrandoUnId) => {
-    const mostrandoUnosId = mostrandoUnId.filter((item) => item.id == "350");
+    const mostrandoUnosId = mostrandoUnId.filter((item) => item.id == "350" ||
+        item.id == "472" || item.id == "473");
     return mostrandoUnosId;
 }
