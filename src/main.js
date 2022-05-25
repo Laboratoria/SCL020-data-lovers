@@ -38,15 +38,10 @@ document.getElementById("item1").addEventListener("click", funcionMostrarPersona
 
 
 
-
-
-const mostrarPrimerFiltro = primerFiltro(datosPersonajesPrincipales);
-
-console.log(mostrarPrimerFiltro);
-
-const guardaSeleccionCasa = document.getElementById("seleccionMenuCasas").value;
-
 document.getElementById("seleccionMenuCasas").addEventListener("change", () => {
-    datosPersonajesPrincipales,
-    guardaSeleccionCasa
+    const guardaSeleccionCasa = document.getElementById("seleccionMenuCasas").value;
+    const mostrarPrimerFiltro = primerFiltro(datosPersonajesPrincipales, guardaSeleccionCasa);
+    console.log(mostrarPrimerFiltro);
+    console.log(guardaSeleccionCasa);
+    showPersonajes(mostrarPrimerFiltro);
 })
