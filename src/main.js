@@ -1,12 +1,10 @@
 import { busqueda } from './data.js';
 
-import { mostrarData } from './data.js';
+import { primerFiltro } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/harrypotter/data.js';
 const characters = data.characters;
-const funFacts = data.funFacts;
-const spells = data.spells;
-const potions = data.potions;
+
 
 const datosPersonajesPrincipales = busqueda(characters);
 //console.log(datosPersonajesPrincipales);
@@ -28,41 +26,27 @@ const showPersonajes = (datosPersonajesPrincipales) => {
 const cambio = document.querySelector(".primeraMuestraPersonajes");
 cambio.innerHTML = showPersonajes(datosPersonajesPrincipales);
 
+function funcionMostrarPersonajes() {
+    let mostrarPrincipales = document.getElementById("loQueVoyAmostrar");
+    if (mostrarPrincipales.style.display === "none") {
+        mostrarPrincipales.style.display = "block";
+    } else {
+        mostrarPrincipales.style.display = "none";
+    }
+}
+document.getElementById("item1").addEventListener("click", funcionMostrarPersonajes)
 
 
-//let dataOriginal = [];
-//dataOriginal.push(busqueda);
-//console.log(dataOriginal);
 
 
 
+const mostrarPrimerFiltro = primerFiltro(datosPersonajesPrincipales);
 
+console.log(mostrarPrimerFiltro);
 
-/*let aquiEstamosGuardando = [];
-aquiEstamosGuardando.push(mostrarData);
-aquiEstamosGuardando.forEach(item => {
-    const elPersonaje350 = document.getElementById("item1");
-    let h1 = document.createElement("h1");
-    h1.innerHTML = `<li>${id}</li>`;
+const guardaSeleccionCasa = document.getElementById("seleccionMenuCasas").value;
+
+document.getElementById("seleccionMenuCasas").addEventListener("change", () => {
+    datosPersonajesPrincipales,
+    guardaSeleccionCasa
 })
-
-//console.log(mostrarData(characters));*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const item = document.getElementById("item1");
-dataOriginal.forEach(elementos => {
-    item.innerHTML = `<li>${elementos.name} </li>`
-})
-console.log(item);*/

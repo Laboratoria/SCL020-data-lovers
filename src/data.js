@@ -27,12 +27,14 @@ export const busqueda = (arrayCharacters) => {
         item.id == "744" || item.id == "123" ||
         item.id == "327" || item.id == "679" ||
         item.id == "382" || item.id == "350");
+    //console.log(arrayFiltradoPorID);
     return arrayFiltradoPorID;
 
 }
 
-export const mostrarData = (mostrandoUnId) => {
-    const mostrandoUnosId = mostrandoUnId.filter((item) => item.id == "350" ||
-        item.id == "472" || item.id == "473");
-    return mostrandoUnosId;
+
+export const primerFiltro = (arrayFiltradoPorID, seleccionHouse) => {
+
+    return arrayFiltradoPorID.filter((elemento) => elemento.house == seleccionHouse);
+
 }
