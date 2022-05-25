@@ -21,10 +21,12 @@ const showPersonajes = (datosPersonajesPrincipales) => {
         </div>`
         )
         .join("");
+
 };
 
 const cambio = document.querySelector(".primeraMuestraPersonajes");
 cambio.innerHTML = showPersonajes(datosPersonajesPrincipales);
+//console.log(cambio.innerHTML);
 
 function funcionMostrarPersonajes() {
     let mostrarPrincipales = document.getElementById("loQueVoyAmostrar");
@@ -42,6 +44,13 @@ document.getElementById("seleccionMenuCasas").addEventListener("change", () => {
     const guardaSeleccionCasa = document.getElementById("seleccionMenuCasas").value;
     const mostrarPrimerFiltro = primerFiltro(datosPersonajesPrincipales, guardaSeleccionCasa);
     console.log(mostrarPrimerFiltro);
-    console.log(guardaSeleccionCasa);
+    //console.log(guardaSeleccionCasa);
     showPersonajes(mostrarPrimerFiltro);
-})
+    //console.log(mostrarPrimerFiltro);
+    const cambioDos = document.querySelector(".primeraMuestraPersonajes");
+    cambioDos.innerHTML = showPersonajes(mostrarPrimerFiltro);
+
+});
+//const cambioDos = document.querySelector(".primeraMuestraPersonajes");
+//cambioDos.innerHTML = showPersonajes(mostrarPrimerFiltro);
+//console.log(mostrarPrimerFiltro);
