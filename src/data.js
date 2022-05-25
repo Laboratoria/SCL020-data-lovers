@@ -1,9 +1,7 @@
-// estas funciones son de ejemplo
+//Filtrar peliculas por titulo
+export const moviesFilter = (movie, name) => {
+  let movieTitle = movie.filter(item => item.title == name);
+  return movieTitle;
+}; 
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+console.log(moviesFilter);

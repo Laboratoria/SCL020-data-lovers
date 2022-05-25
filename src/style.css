@@ -44,8 +44,8 @@ header p, #characters, #gender, #species{
     border-top: 3em solid #0080BD;
 }
 h2 {/*Todos los h2*/
-    padding: 2%;
-    margin-left: 10%;
+    padding: 4% 0% 2% 0%;
+    margin-left: 15%;
     font-family: 'Permanent Marker', cursive;
     font-size:  4 em;
     font-weight: bold;
@@ -53,10 +53,10 @@ h2 {/*Todos los h2*/
 }
 section p { /*propiedades de los p contenidos en los section*/
     padding-top: 2%;
-    padding-left: 10%;
+    padding-left: 15%;
     padding-right: 10%;
     font-weight: normal;
-    font-size: 1 em;
+    font-size: 1.2 em;
     color: #3D56B2;
 }
 .articleToLeft { /*para que los articulos o parrafos de las dos secciones queden al lado izquierdo y la imagen a la*/
@@ -117,7 +117,7 @@ section p { /*propiedades de los p contenidos en los section*/
         width: 10%;
     }
 .filters { /*para que el filtrado quede centrado en grupo en la parte de arriba*/
-        display: flex;
+       display: flex;
         align-items: flex-start;
         flex-direction: row;
         margin-top: 10%;
@@ -129,7 +129,7 @@ section p { /*propiedades de los p contenidos en los section*/
         height:40px;
         width: 250px;
         border: 1.5px solid #398AB9;
-        border-radius: 10%;
+        border-radius: 10px;
         font-size:large;
         background-color: #398AB9;
     }
@@ -159,3 +159,36 @@ nav p { /*título redes sociales*/
         font-size: 40px;
         color:white;
     }
+
+/*tablet*/
+@media (max-width: 1024px) and (min-width: 426px){
+    #chihiroGif{
+        display: none;
+    }
+
+    h1 {
+        font-size: 10 em;
+    }
+
+    header p{
+        font-size: 1.2 em;
+    }
+
+    h2{
+     padding: 10% 0% 4% 0%;
+     margin-left: 15%;
+    }
+
+    section p{
+        padding-top: 2% 0% 2% 0%;
+        margin-right: 5%;
+    }
+
+    .articleToLeft { /*para que los articulos o parrafos de las dos secciones queden al lado izquierdo y la imagen a la*/
+       justify-content: center;
+        width: 100%;
+       margin-left: 0;
+       
+    }
+}
+
