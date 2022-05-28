@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Runeterra side</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  
+<!--PRIMERA SECCION-->
+  
+<section class="pag1" id="pag1">
+  
+  <header>
+      <a href="https://www.riotgames.com/es"><img src="fotos/logoriot.png" alt="lol" class="logoSearch1"></a>
+      <a href="https://www.leagueoflegends.com/es-mx/"><img src="fotos/logololtiny.png" alt="lol" class="logoSearch2"></a>
+  </header>
+  
+  <div class="inicio">
+   <img src="fotos/logolol.png" id="logo">
+    <h2>Encuentra tu campeón ideal</h2>
+    <input type=button id=boton1 class="botones" value="Empezar">
+  </div>
+</section>
+
+<!--SEGUNDA SECCION-->
+<section id="pag2" class="secondPage">
+   <h4>
+    League of Legends es un juego de estrategia por equipos en el que dos equipos de cinco campeones se enfrentan para ver quién destruye antes la base del otro. Elige de entre un elenco de 149 campeones para realizar jugadas épicas, asesinar rivales y derribar torretas para alzarte con la victoria.
+  </h4>
+<p>Encuentra a tu</p>
+<h1>CAMPEÓN</h1>
+<p id="parrafo2">Busca el campeón que más se amolde a tus gustos y dominalo en la grieta</p>
+  
+<!--BOTONES DE FILTRADO-->
+  
+
+<nav id="filterButtons">
+  <ul>
+    <li><a id="all" href="#">TODOS</a></li>
+    <li><a href="#">ROL</a>
+      <ul>
+        <li><a id="assassin" href="#" >Asesinos</a></li>
+        <li><a id="fighter" href="#" >Luchadores</a></li>
+        <li><a id="mage" href="#" >Magos</a></li>
+        <li><a id="marksman" href="#" >Tiradores</a></li>
+        <li><a id="support" href="#" >Soportes</a></li>
+        <li><a id="tank" href="#" >Tanques</a></li>
+      </ul>
+    </li>
+    <li><a href="#">DIFICULTAD</a>
+      <ul>
+        <li><a id="ascendente" href="#">Ascendente</a></li>
+        <li><a id="descendente" href="#">Descendente</a></li>
+      </ul>
+      </li>
+  </ul>
+</nav>
+</section>
+
+  <div id = "champions"></div>
+
+
+<script src="main.js" type="module"></script>
+</body>
 </html>

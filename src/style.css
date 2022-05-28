@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header{
+    display: flex;
+    width: auto;
+    height: 60px;
+    background: #772C43;
+    align-items: center;
+    justify-content: left;
+    align-content: center;
+    /*outline: 2px solid red; identifica los div*/
+  }
+  
+  .logoSearch1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    height: 35px;
+    margin: 5px;
+    /*outline: 2px solid red; identifica los div*/
+  }
+  
+  .logoSearch2{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: auto;
+    height: 35px;
+    margin: 5px;
+    /*outline: 2px solid red; identifica los div*/
+  }
+  
+  .pag1{
+    background-image: url(fotos/darius.gif);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+  }
+  
+  .inicio{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #logo{
+    width: 40%;
+    height: 40%;
+    margin-top: 10%;
+   /*outline: 2px solid red; identifica los div*/
+  }
+  
+  h2{
+    color:  #ebe9eb;
+  }
+  
+  .botones{
+    background-color: #772C43;
+    font-family: "Georgia";
+    color: white;
+    font-size: large;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border-color: #C89B3C;
+  }
+  
+  #boton1{
+    padding: 10px 10px;
+    width: 35vh;
+    left: 45%;
+    margin-top: 30px;
+    text-align: center;
+    }
+  
+  
+  /*CARACTERISTICAS DE LA SEGUNDA SECCION*/
+  
+  .secondPage{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 500px;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /*outline: 2px solid red; /*identifica los div*/
+  }
+  
+  .secondPage h4{
+    height: 250px;
+    width: 60%;
+    max-width: 500px;
+    font-size: x-large;
+   /*outline: 2px solid red;/*identifica los div*/
+    
+  }
+  #parrafo2{
+    font-size: medium;
+    color:#772C43;
+  }
+  
+  #filterButtons{ 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  
+  #filterButtons ul li {
+     background-color:#C89B3C
+  }
+  
+  #filterButtons ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  
+  #filterButtons ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  
+  #filterButtons ul li {
+    position:relative;
+    float:left;
+    margin:0%;
+    padding:0%;
+  }
+  
+  #filterButtons ul li:hover {
+    background:#C8AA6E
+  }
+  
+  #filterButtons ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+  }
+  
+  #filterButtons ul ul li {
+    float:none;
+    width:150px;
+  }
+  
+  #filterButtons ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+  }
+  
+  #filterButtons ul li:hover > ul {
+    display:block;
+  }
+
+/*#champions{
+  width: 100%;
+}*/
+
+  .ORDEN{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);*/
+    align-items: center;
+    height: 100%;
+    outline: 2px solid red; /*identifica los div*/
+  }
+
+ 
+  .card{
+
+    display: grid;
+    gap: 20px;
+    padding: 1rem;
+    padding-bottom: 50px;
+    /*transition: 0.4s ease-in-out;*/
+    outline: 2px solid red; /*identifica los div*/
+  }
+
+  .card img {
+    width: 400px;
+    margin: auto;
+  }
+
+  .card .name {
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Inter';
+    background: #0C1F50;
+    font-weight: bold;
+    color: #fff;
+  }
